@@ -1,2 +1,5 @@
 .idea
 *.iml
+projects/scss/bourbon
+projects/.sass-cache
+projects/css/*.map

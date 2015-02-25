@@ -1,4 +1,4 @@
-@import 'bourbon'; // http://bourbon.io/
+@import 'bourbon/bourbon'; // http://bourbon.io/
 
 @import '../partials/variables'; // colors, fonts etc...
 
@@ -71,7 +71,7 @@ Main components
 
 header {
 	height: 200px;
-	line-height: 200px;
+    padding: 50px 30px 0 30px;
 	text-align: center;
 	background: $color-1;
 
@@ -80,13 +80,21 @@ header {
 		@include font-size(18px);
 	}
 
+    p {
+      padding-top: 1em;
+    }
+
 	@include MQ(L) {
 		height: 300px;
-		line-height: 300px;
+        padding-top: 100px;
 
 		h1 {
 			@include font-size(24px);
 		}
+
+        p {
+          padding-top: 2em;
+        }
 	}
 }
 
