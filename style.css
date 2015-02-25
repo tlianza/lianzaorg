@@ -1,0 +1,36 @@
+BODY{
+                       	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+                        font-size: 80%;
+                        background-color: #333;
+                }
+H1{
+	text-align:center;
+	color: white;
+}
+                #wrapper{
+                        background-color: white;
+                        margin: 15px auto;
+                        width:600px;
+                        text-align: left;
+                        padding: 10px 20px 20px 20px;
+                }
+                #banner{
+                        text-align:center;
+			margin: -10px;
+                }
+                .sectionheader{
+                        font-weight:bold;
+                }
+                .textchunk{
+                        padding: 25px 0px 0px 0px;
+                }
+                .morelink{
+                        font-size: 90%;
+                }
+                .date{
+                        font-size: 80%;
+                }
+
+#friendfeed.widget { border-color: #000000 !important; }
+#friendfeed.widget .bottom { background: transparent !important; border: none !important; text-align: right; }
+#friendfeed.widget .bottom a {font-size: smaller !important; }

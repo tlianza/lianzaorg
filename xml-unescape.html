@@ -1,0 +1,36 @@
+<html>
+<head>
+ <title>Web-Based XML Unescape in JavaScript</title>
+ <style type="text/css">
+  textarea {
+    width: 500;
+    height: 200;
+  }
+ </style>
+  <script type="text/javascript">
+function un()
+{
+  var temp = document.getElementById("codeoutput");
+  temp.innerHTML = document.getElementById("xmlcode").value;
+  //temp.removeChild(temp.firstChild);
+  document.getElementById("urioutput").innerHTML = unescape(temp.innerHTML);
+}
+ </script>
+</head>
+<body>
+  
+  <h1>Unescape X/HTML</h1>
+  
+  <form action="#" onsubmit="un();return false;">
+  <textarea id="xmlcode"></textarea>
+  <br />
+  <input type="submit">
+  </form>
+  <h3>Output</h3>
+  <textarea id="codeoutput"></textarea>
+  
+  <h3>..and URI-unescaped:</h3>
+  <textarea id="urioutput"></textarea>
+  
+</body>
+</html>

@@ -1,0 +1,119 @@
+.leftphoto {
+	padding-bottom : 5px;
+	padding-left : 5px;
+	padding-right : 5px;
+	padding-top : 5px;
+	float: left;
+}
+.rightphoto {
+	padding-bottom : 5px;
+	padding-left : 5px;
+	padding-right : 5px;
+	padding-top : 5px;
+	float: right;
+}
+.pushed {
+	text-indent : 25px;
+}
+.largesect {
+	color : #6F006F;
+	font : bold;
+	font-size : larger;
+	padding-top : 10px;
+}
+.smallsect {
+	color : #6F006F;
+	font : bold;
+	font-size : smaller;
+	padding-top : 5px;
+}
+A:HOVER {
+	text-decoration : underline;
+}
+.innertable {
+	background-color : Silver;
+}
+.sechead {
+	color : #6F006F;
+	font : bold;
+}
+.maintext {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : smaller;
+}
+BODY {
+	background-image : "images/purp-bg.gif";
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+.breadcrumb {
+	color : White;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 60%;
+}
+.myname {
+	color : White;
+	font-family : "Courier New", Courier, monospace;
+	font-size : 150%;
+	font-weight : bold;
+}
+
+.blacktext {
+	color : Black;
+}
+
+A {
+	text-decoration : none;
+}
+
+.bulletitems {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight : bold;
+	font-size : 75%;
+}
+
+.date {
+	font-size : smaller;
+}
+
+.coursenum {
+	font-size : smaller;
+}
+
+.photocol {
+		text-align : center;
+}
+
+.caption {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight : bold;
+	font-size : 65%;
+}
+
+.rowtitle{
+	font-weight : bold;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 65%;
+	background : #E1E1E1;
+	text-align: right;
+	border: solid #999 1px;
+	padding: 1;
+}
+
+.coltitle{
+	font-weight : bold;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 65%;
+	background : #E1E1E1;
+	border: solid #999 1px;
+}
+
+.boxed_item{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background : #E1E1E1;
+	border: solid #999 1px;
+	padding: 1;
+}
+
+.bylaw{
+	padding-bottom : 3;
+}
