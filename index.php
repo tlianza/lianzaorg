@@ -1,7 +1,7 @@
 <?php
 
 //the utility that parses rss feeds
-require('simplepie.inc');
+require('SimplePie.compiled.php');
 $cache_location = './cache';
 
 //set an error handler
