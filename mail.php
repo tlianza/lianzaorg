@@ -34,18 +34,22 @@ $mailsent = strcmp($body, "");
 <?php if ( !$mailsent ) { ?>
 
     <form action="mail.php" method="post">
-        <b>Your message:</b><br /><textarea cols="60" rows="10" name="c_mbody"></textarea>
-        <br /><br /><b>Your e-mail address:</b>&nbsp;<input type="text" name="c_emailaddr" size="20" maxlength="200" />&nbsp;(if you want a reply)
-        <br /><br /><input type="submit" name="c_submit" value="Send E-mail" />
+        <div class="form-group">
+            <label for="c_mbody">Your message</label>
+            <textarea class="form-control"  cols="60" rows="10" name="c_mbody"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="c_emailaddr">Your email address</label> (if you want a reply)
+            <input type="email" name="c_emailaddr" class="form-control" id="email">
+        </div>
+
+        <input type="submit" class="btn" name="c_submit" value="Send E-mail" />
     </form>
 
 <?php } else { ?>
-    <tr>
-        <td class="maintext">
-            <br /><b><?php echo( $mailok ); ?></b><br /><?php echo( $body ); ?>
-            <br /><br /><a href=".">&lt;&lt; back home</a>
-        </td>
-    </tr>
+        <p><?php echo( $mailok ); ?><br /><?php echo( $body ); ?></p>
+        <p><a href=".">&lt;&lt; back home</a></p>
 <?php }?>
 <?php if ( !$mailsent ) { ?>
     <h2>Google Hangout</h2>
