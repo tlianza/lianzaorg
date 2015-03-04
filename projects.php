@@ -14,6 +14,32 @@
     </div>
     <ul class="timeline">
 
+        <li class="timeline-inverted">
+            <div class="timeline-badge danger"><i class="glyphicon glyphicon-th-large"></i></div>
+            <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h4 class="timeline-title">Four Feelings</h4>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> May 2013</small></p>
+                </div>
+                <div class="timeline-body">
+                    <a href="/fourfeelings.html"><img src="../images/Four_Feelings.png" border="1"></a>
+                    <p>
+                        Human emotions can be boiled down to
+                        <a href="http://nymag.com/thecut/2014/02/study-humans-have-only-four-feelings.html">four feelings</a>.
+                        This is a simple, mobile-friendly counter to let you track your feelings throughout the day.
+                        When you think of it, open the page and click the green box representing the feeling you're feeling
+                        right at that moment. At the end of the day, look back at the totals and see how you felt.
+                        It's an interesting exercise that might surprise you.
+                    </p>
+                    <dl class="dl-horizontal">
+                        <dt>Technologies</dt>
+                        <dd>HTML5 LocalStorage</dd>
+                    </dl>
+                </div>
+            </div>
+        </li>
+
+
         <li>
           <div class="timeline-badge"><i class="glyphicon glyphicon-comment"></i></div>
           <div class="timeline-panel">
