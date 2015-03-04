@@ -10,7 +10,6 @@ Me:
 <a href="http://stackoverflow.com/users/26624/tlianza" rel="me" target="_blank">stackoverflow</a> |
 <a href="https://plus.google.com/+TomLianza/" rel="me" target="_blank">google</a>
 
-<script type="text/javascript" src="http://friendfeed.com/embed/widget/tlianza?v=3&amp;num=10&amp;hide_logo=1"></script><noscript><a href="http://friendfeed.com/tlianza"><img alt="View my FriendFeed" style="border:0;" src="http://friendfeed.com/embed/widget/tlianza?v=3&amp;num=10&amp;hide_logo=1&amp;format=png"/></a></noscript>
-
+<script type="text/javascript" class="rebelmouse-embed-script" src="https://www.rebelmouse.com/static/js-build/embed/embed.js?site=tlianza&height=1500&flexible=1&dont_load_new_posts=0&more_button=0&show_rebelnav=1"></script>
 
 <?php require('_footer.php'); ?>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php print(isset($title) ? $title : 'Lianza.org');?></title>
+    <title><?php print(isset($title) ? $title : 'Lianza.org - personal website of Tom Lianza');?></title>
     <link rel="openid.server" href="https://indieauth.com/openid" />
     <link rel="openid.delegate" href="http://lianza.org/" />
     <meta http-equiv="X-XRDS-Location" content="http://tlianza.myopenid.com/xrds" />
@@ -36,7 +36,9 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="/">Lianza.org</a>
+                  <a class="navbar-brand" href="/" title="Lianza.org">
+                      <span><img alt="Lianza.org" src="/images/tomavatar_20.png"> Lianza.org</span>
+                  </a>
               </div>
 
               <!-- Collect the nav links, forms, and other content for toggling -->
