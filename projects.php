@@ -39,6 +39,53 @@
             </div>
         </li>
 
+        <li>
+            <div class="timeline-badge primary"><i class="glyphicon glyphicon-list"></i></div>
+            <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h4 class="timeline-title">Pivotal Tracker Reports</h4>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2011-2013</small></p>
+                </div>
+                <div class="timeline-body">
+                    <a href="https://github.com/wishpot/pivotal-tracker-reports" target="_blank"><img src="/images/pivotal_tracker_reports.png"></a>
+                    <p>
+                        I've really enjoyed <a href="http://www.pivotaltracker.com/" target="_blank">Pivotal Tracker</a> as a development tool,
+                        but generating reports for businesspeople to see high-level status was not possible. I built this tool
+                        using Sinatra and the Pivotal Tracker API to generate reports that could be emailed out on a weekly
+                        basis. They can group by label (to see where we're spending the most resources) and highlight in
+                        red or green if we're resolving ore stories than we're creating over a given time period.
+                    </p>
+                    <dl class="dl-horizontal">
+                        <dt>Technologies</dt>
+                        <dd>Ruby/Sinatra with a JSON API</dd>
+                    </dl>
+                </div>
+            </div>
+        </li>
+
+        <li class="timeline-inverted">
+            <div class="timeline-badge warning"><i class="glyphicon glyphicon-warning-sign"></i></div>
+            <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h4 class="timeline-title">GetExceptional Plugin for C#</h4>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2009</small></p>
+                </div>
+                <div class="timeline-body">
+                    <a href="http://getexceptional.codeplex.com/" target="_blank"><img src="/images/exceptional_mail.png"></a>
+                    <p>
+                        Moving from Ruby to C# left me missing some of the great tools the Ruby ecosystem had relied on,
+                        including hosted error tracking. <a href="https://github.com/exceptional/exceptional" target="_blank">Exceptional</a>
+                        was one of those tools, and it did not have a .NET
+                        compatible client, so I wrote one and open-sourced it on Codeplex.
+                    </p>
+                    <dl class="dl-horizontal">
+                        <dt>Technologies</dt>
+                        <dd>C#</dd>
+                    </dl>
+                </div>
+            </div>
+        </li>
+
 
         <li>
           <div class="timeline-badge"><i class="glyphicon glyphicon-comment"></i></div>
