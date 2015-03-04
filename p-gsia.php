@@ -1,37 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?php 
-	define("pagename", "GSIA Job Offers"); 
-	define("level1", "projects");
-	define("file1", "projects.php");
+<?php
+$nav = 2;
+$title = 'Projects: GSIA Job Offers';
+require('_header.php');
 ?>
 
-<html>
-<head>
-	<title>{Tom Lianza} Projects -> GSIA Job Offer Reporting</title>
-	<link href="common.css" rel="stylesheet" type="text/css" />
-	<link href="." rel="start" dir="ltr" xml:lang="en" lang="en" />
-	<link href="projects.php" hreflang="en" rev="previous prev" />
-</head>
-
-<body background="images/purp-bg.gif">
 <DIV ID="overDiv" STYLE="position:absolute; visibility:hide; z-index:1;"></DIV>
 <script language="JavaScript" src="overlib.js" type="text/javascript"></script>
 
 <br>&nbsp;<br>
 <table width="80%" border="0" cellspacing="0" cellpadding="0" align="center">
 <tr>
-	<td class="breadcrumb"><?php require("tree.php")?></td>
-	<td align="right"><?print($titleString)?></td>
-</tr>
-<tr>
 	<td colspan="2">
 	<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#C0C0C0">
 	<tr>
 		<td colspan="2" class="maintext">
-		<div class="largesect">Introduction</div>
+		<h3>Introduction</h3>
 		This site is used by students at the <a href="http://www.gsia.cmu.edu/">GSIA</a> and administrators at the <a href="http://www.gsia.cmu.edu/coc/">Career Center</a>.  It is currently active, but contains sensitive information about job offers so it is not accessible to the general public.  The career center uses this process to collect the data that is eventually aggregated and provided to magazines such as <a href="http://www.usnews.com/">US News and World Reports</a>.  This should provide a brief overview of some of the features.<p>
-		<div class="largesect">Two Faces to the System</div>
+		<h3>Two Faces to the System</h3>
 		</td>
 	</tr>
 	<tr>
@@ -45,7 +30,7 @@
 	<tr>
 		<td colspan="2" class="maintext">
 			Both interfaces are tied to the same database.  Students have the ability to enter, save, and manage job offers.  Employers can go through and approve these job offers, and input job offers themselves.<p>
-		<div class="largesect">The Student Interface</div>
+		<h3>The Student Interface</h3>
 		</td>
 	</tr>
 	<tr>
@@ -65,14 +50,20 @@
 		</td>
 	</tr>
 	<tr>
-		<td colspan="2" class="maintext"><div class="largesect">The Administrative Interface</div></td>
+		<td colspan="2" class="maintext"><h3>The Administrative Interface</h3></td>
 	</tr>
 	<tr>
 		<td valign="top" align="center"><a href="images/fullscreen_gsia_verify.gif"><img src="images/screen_gsia_verify.gif" width="225" height="146" alt="" border="1"></a>
 		<div class="caption">Image 3: Administrative job offer validation</div>
 		</td>
 		<td valign="top" class="maintext">
-			The primary task for administrators is to validate all of these offers to make sure they are accurate.  With that in mind, I designed a process that would make this as quick and easy as possible to iterate through the submitted offers.  Offers are presented so that they fit on a single screen (without scrolling) and are ordered in a queue based on their order of submission from the students.  Approval takes one click (on the button "Approve") and the offer is removed from the verification queue and the next offer is presented.  "Next" and "Previous" buttons allow the administrator to move around the queue linearly.  Their position in the list is represented in the upper-right hand corner.
+			<p>The primary task for administrators is to validate all of these offers to make sure they are accurate.
+            With that in mind, I designed a process that would make this as quick and easy as possible to iterate through the
+            submitted offers.  Offers are presented so that they fit on a single screen (without scrolling) and are ordered in a
+            queue based on their order of submission from the students.  Approval takes one click (on the button "Approve") and
+            the offer is removed from the verification queue and the next offer is presented.  "Next" and "Previous" buttons allow
+            the administrator to move around the queue linearly.  Their position in the list is represented in the upper-right hand corner.
+            </p>
 		</td>
 	</tr>
 	<tr>
@@ -80,7 +71,14 @@
 		<div class="caption">Image 4: Modification within the validation process</div>
 		</td>
 		<td valign="top" class="maintext">
-			One of the more interesting screens is what appears when you click the "Modify" button on the administrative interface (Image 4).  The output is virtually <i>identical</i> to the original screen, except now all of the fields are editable.  This means that the layout should still be familiar to the user, and they should be able to more easily find and edit the field in question.  FYI: The "annual salary" field is not editable because it is calculated by the system based on the other fields, and the red icon next to the company name means that this is a company that is not already in the system.  Approving this job offer will add the company to the system automatically, or they can click "change" to choose another company.
+			<p>One of the more interesting screens is what appears when you click the "Modify" button on the
+                administrative interface (Image 4).  The output is virtually <i>identical</i> to the original screen,
+                except now all of the fields are editable.  This means that the layout should still be familiar
+                to the user, and they should be able to more easily find and edit the field in question.
+                FYI: The "annual salary" field is not editable because it is calculated by the system based on the
+                other fields, and the red icon next to the company name means that this is a company that is not
+                already in the system.  Approving this job offer will add the company to the system automatically, or
+                they can click "change" to choose another company.</p>
 		</td>
 	</tr>
 	<tr>
@@ -88,26 +86,39 @@
 		<div class="caption">Image 5: Searching through offers</div>
 		</td>
 		<td valign="top" class="maintext">
-			It is also necessary at times to be able to search through offers or jump to one offer in particular.  This area (Image 5) allows the administrators to do just that, and search on a number of different attributes.  The OfferID links also allow the administrator to jump straight to that record, just as it had appeared in Image 3.  They can then approve or modify it without going down the queue of offers.
+			<p>It is also necessary at times to be able to search through offers or jump to one offer in particular.
+                This area (Image 5) allows the administrators to do just that, and search on a number of different
+                attributes.  The OfferID links also allow the administrator to jump straight to that record, just as
+                it had appeared in Image 3.  They can then approve or modify it without going down the queue of offers.
+            </p>
 		</td>
 	</tr>
 	<tr>
 		<td colspan="2" class="maintext">
-			<div class="largesect">Other Comments</div>
-			&nbsp;&nbsp;&nbsp;&nbsp;There are several other features of the system that aren't highlighted here, primarily because they don't have much of a visual component.	One of which is the tuition setting procedure.  The tuition value is used to make calculations when a student receives tuition reimbursement.  This value is stored in the ASP object model at the Application level.  Of course, one of the problems with this is that if the server were rebooted or another Global.asa file were saved, the application level variables would be reset.  This value cannot be hard-coded either, as it changes over time.  The solution was a short but interesting backup storage script that saves the value both in the variable and in a text file.  If either of these is missing, it fills in the other.  That way, if the application is restarted and sees that it has no value for that variable, it can pick it up out of the text file.
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;There is also an interesting feature that allows administrators to define common mistakes for company names.  This is done in order to preserve data integrity in the database.  If a student doesn't find their company in the list, they may add it as a new company.  In some cases, there may be two different (but similar) names for the same company, and we don't want duplicate entries in the database.  By defining common mistakes, administrators can define certain key entries which, if entered by a student, should suggest an existing company name that the student might have overlooked.</p>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Finally, there are several automated e-mail components built into the system.  Nightly, the system checks who accepted an offer that day and notifies the administration.  In addition, whenever events that might require administrative attention take place, such as accepting and later declining an offer takes place, an e-mail is sent notifying the administration of such an event.</p>
+			<h3>Other Comments</h3>
+			<p>There are several other features of the system that aren't highlighted here, primarily because they don't have
+                much of a visual component.	One of which is the tuition setting procedure.  The tuition value is used to
+                make calculations when a student receives tuition reimbursement.  This value is stored in the ASP object
+                model at the Application level.  Of course, one of the problems with this is that if the server were
+                rebooted or another Global.asa file were saved, the application level variables would be reset.  This
+                value cannot be hard-coded either, as it changes over time.  The solution was a short but interesting
+                backup storage script that saves the value both in the variable and in a text file.  If either of these
+                is missing, it fills in the other.  That way, if the application is restarted and sees that it has no
+                value for that variable, it can pick it up out of the text file.</p>
+			<p>There is also an interesting feature that allows administrators to define common mistakes for company names.
+                This is done in order to preserve data integrity in the database.  If a student doesn't find their
+                company in the list, they may add it as a new company.  In some cases, there may be two different
+                (but similar) names for the same company, and we don't want duplicate entries in the database.  By
+                defining common mistakes, administrators can define certain key entries which, if entered by a student,
+                should suggest an existing company name that the student might have overlooked.</p>
+			<p>Finally, there are several automated e-mail components built into the system.  Nightly, the system checks
+                who accepted an offer that day and notifies the administration.  In addition, whenever events that might
+                require administrative attention take place, such as accepting and later declining an offer takes place,
+                an e-mail is sent notifying the administration of such an event.</p>
 		</td>
 	</tr>
 	</table>
 	</td>
 </tr>
-<tr>
-	<td class="breadcrumb"><?php require("tree.php")?></td>
-</tr>
 </table>
-<p>&nbsp;</p>
-
-
-
-</html>
+<?php require('_footer.php'); ?>

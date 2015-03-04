@@ -1,7 +1,7 @@
 <?php
-    $nav=1;
+    $nav=3;
     $title='Contact Tom Lianza';
-    require('_header.html');
+    require('_header.php');
 
 $body = "";
 $mailok = "There was an error sending your message:";
@@ -54,4 +54,4 @@ $mailsent = strcmp($body, "");
 <?php }?>
 
 
-<?php require('_footer.html'); ?>
+<?php require('_footer.php'); ?>

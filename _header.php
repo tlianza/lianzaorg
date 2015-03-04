@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lianza.org</title>
+    <title><?php print(isset($title) ? $title : 'Lianza.org');?></title>
     <link rel="openid.server" href="https://indieauth.com/openid" />
     <link rel="openid.delegate" href="http://lianza.org/" />
     <meta http-equiv="X-XRDS-Location" content="http://tlianza.myopenid.com/xrds" />
@@ -20,6 +20,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+      <?php if(isset($head)){ echo $head; }?>
   </head>
   <body>
 
@@ -40,12 +42,12 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-                      <li><a href="/blog">Blog</a></li>
-                      <li><a href="/projects">Projects</a></li>
+                      <li <?php if(isset($nav) && 0==$nav){?>class="active"<?php };?> ><a href="/">Home</a></li>
+                      <li <?php if(isset($nav) && 1==$nav){?>class="active"<?php };?> ><a href="/blog">Blog</a></li>
+                      <li <?php if(isset($nav) && 2==$nav){?>class="active"<?php };?> ><a href="/projects.php">Projects</a></li>
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
-                      <li><a href="/mail.php" title="Send an email">Contact</a></li>
+                      <li <?php if(isset($nav) && 3==$nav){?>class="active"<?php };?> ><a href="/mail.php" title="Send an email">Contact</a></li>
 
                   </ul>
               </div><!-- /.navbar-collapse -->
