@@ -1,0 +1,40 @@
+<?php
+$nav = 2;
+$title = 'Web-Based XML Unescape in JavaScript';
+require('_header.php');
+?>
+
+
+<script type="text/javascript">
+    function un()
+    {
+      var temp = document.getElementById("codeoutput");
+      temp.innerHTML = document.getElementById("xmlcode").value;
+      //temp.removeChild(temp.firstChild);
+      document.getElementById("urioutput").innerHTML = unescape(temp.innerHTML);
+    }
+</script>
+
+
+    <h1>Unescape X/HTML</h1>
+
+Paste in some text that is escaped, and this will simply show you the xml-unescaped and url-unescaped equivalents.
+
+  <form action="#" onsubmit="un();return false;">
+      <div class="form-group">
+        <textarea id="xmlcode" class="form-control" ></textarea>
+        <input type="submit">
+      </div>
+  </form>
+
+    <div class="form-group">
+         <label for="codeoutput">XML Unescaped</label>
+        <textarea id="codeoutput" class="form-control"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="urioutput">URI-unescaped</label>
+        <textarea id="urioutput" class="form-control"></textarea>
+    </div>
+
+<?php require('_footer.php'); ?>

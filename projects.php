@@ -33,7 +33,7 @@
                     </p>
                     <dl class="dl-horizontal">
                         <dt>Technologies</dt>
-                        <dd>HTML5 LocalStorage</dd>
+                        <dd>HTML5 LocalStorage, AngularJS</dd>
                     </dl>
                 </div>
             </div>
