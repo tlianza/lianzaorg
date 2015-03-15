@@ -23,6 +23,10 @@
         <img src="/images/icons/google_plus.png" />
         google
     </a>
+    <a href="http://lianza.org/blog" rel="me" target="_blank">
+        <img src="/images/icons/wpmini-blue.png" />
+        blog
+    </a>
     &nbsp;}
 </div>
 
