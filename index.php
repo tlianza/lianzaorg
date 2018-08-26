@@ -30,8 +30,4 @@
     &nbsp;}
 </div>
 
-<div id="embed_rebel">
-    <script type="text/javascript" class="rebelmouse-embed-script" src="https://www.rebelmouse.com/static/js-build/embed/embed.js?site=tlianza&height=1500&flexible=1&dont_load_new_posts=0&more_button=0&show_rebelnav=1"></script>
-</div>
-
 <?php require('_footer.php'); ?>
