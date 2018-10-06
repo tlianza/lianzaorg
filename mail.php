@@ -8,53 +8,51 @@ $mailok = "There was an error sending your message:";
 
 if(isset($_POST['c_mbody'])){
 	$body = $_POST['c_mbody'];
-        $body = $body . "\n e-mail: ";
-        $body = $body . $_POST['c_emailaddr'];
-	 if ( mail("postman@lianza.org", "Lianza.org Message", $body) ){
-                $mailok = "Your message has been sent:";
-        }
+	if ( mail("postman@lianza.org", "Lianza.org Message", $body) ){
+         $mailok = "Your message has been sent:";
+    }
 }
 
-/*
-if (in_array("c_mbody", array_keys($HTTP_POST_VARS))){
-	$body = $c_mbody;
-	$body = $body . "\n e-mail: ";
-	$body = $body . $c_emailaddr;
-	if ( mail("postman@lianza.org", "Lianza.org Message", $body) ){
-		$mailok = "Your message has been sent:";
-	}
-}
-*/
 $mailsent = strcmp($body, "");
 ?>
 
 <h1>Contact</h1>
 
-<h2>Send Email</h2>
+<div class="card mb-3">
+    <h5 class="card-header">Send Email</h5>
+    <div class="card-body">
+        <?php if ( !$mailsent ) { ?>
+            <form action="mail.php" method="post">
+                <div class="form-group">
+                    <label for="c_mbody">Your message</label>
+                    <textarea class="form-control"  cols="60" rows="10" name="c_mbody"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="c_emailaddr">Your email address</label> (if you want a reply)
+                    <input type="email" name="c_emailaddr" class="form-control" id="email">
+                </div>
+
+                <input type="submit" class="btn btn-primary" name="c_submit" value="Send E-mail" />
+            </form>
+        <?php } else { ?>
+            <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading"><?php echo( $mailok ); ?></h4>
+                <p><?php echo( $body ); ?></p>
+            </div>
+            <p><a href=".">&lt;&lt; back</a></p>
+        <?php }?>
+    </div>
+</div>
+
 <?php if ( !$mailsent ) { ?>
-
-    <form action="mail.php" method="post">
-        <div class="form-group">
-            <label for="c_mbody">Your message</label>
-            <textarea class="form-control"  cols="60" rows="10" name="c_mbody"></textarea>
-        </div>
-
-        <div class="form-group">
-            <label for="c_emailaddr">Your email address</label> (if you want a reply)
-            <input type="email" name="c_emailaddr" class="form-control" id="email">
-        </div>
-
-        <input type="submit" class="btn" name="c_submit" value="Send E-mail" />
-    </form>
-
-<?php } else { ?>
-        <p><?php echo( $mailok ); ?><br /><?php echo( $body ); ?></p>
-        <p><a href=".">&lt;&lt; back home</a></p>
-<?php }?>
-<?php if ( !$mailsent ) { ?>
-    <h2>Google Hangout</h2>
+<div class="card">
+    <h5 class="card-header">Google Hangout</h5>
+    <div class="card-body">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <div class="g-hangout" data-render="createhangout" data-invites="[{ id : '114575895726450969649', invite_type : 'PROFILE' }]" ></div>
+        <div class="g-hangout" data-render="createhangout" data-invites="[{ id : '114575895726450969649', invite_type : 'PROFILE' }]" ></div>
+    </div>
+</div>
 <?php }?>
 
 

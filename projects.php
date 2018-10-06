@@ -9,17 +9,17 @@
     <div class="page-header">
         <h1 id="timeline">Projects</h1>
         This is an overview of some of the sites I have created for school, for fun, and assorted extra-curricular projects.
-        My professional work is mostly listed on <a href="http://www.linkedin.com/in/tlianza" target="_blank">LinkedIn</a>, and not here.
+        My professional work is mostly listed on <a href="https://www.linkedin.com/in/tlianza/" target="_blank">LinkedIn</a>, and not here.
         In some cases, clicking on the screenshot will bring you to that page, or to a description of how that page was created.
     </div>
     <ul class="timeline">
 
         <li class="timeline-inverted">
-            <div class="timeline-badge danger"><i class="glyphicon glyphicon-th-large"></i></div>
+            <div class="timeline-badge danger"><i class="fas fa-th-large"></i></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <h4 class="timeline-title">Four Feelings</h4>
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> May 2013</small></p>
+                    <p><small class="text-muted"><i class="far fa-clock"></i> May 2013</small></p>
                 </div>
                 <div class="timeline-body">
                     <a href="/fourfeelings.html"><img src="../images/Four_Feelings.png" border="1"></a>
@@ -40,11 +40,11 @@
         </li>
 
         <li>
-            <div class="timeline-badge primary"><i class="glyphicon glyphicon-list"></i></div>
+            <div class="timeline-badge primary"><i class="fas fa-list"></i></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <h4 class="timeline-title">Pivotal Tracker Reports</h4>
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2011-2013</small></p>
+                    <p><small class="text-muted"><i class="far fa-clock"></i> 2011-2013</small></p>
                 </div>
                 <div class="timeline-body">
                     <a href="https://github.com/wishpot/pivotal-tracker-reports" target="_blank"><img src="/images/pivotal_tracker_reports.png"></a>
@@ -64,11 +64,11 @@
         </li>
 
         <li class="timeline-inverted">
-            <div class="timeline-badge warning"><i class="glyphicon glyphicon-warning-sign"></i></div>
+            <div class="timeline-badge warning"><i class="fas fa-exclamation-triangle"></i></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <h4 class="timeline-title">GetExceptional Plugin for C#</h4>
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2009</small></p>
+                    <p><small class="text-muted"><i class="far fa-clock"></i> 2009</small></p>
                 </div>
                 <div class="timeline-body">
                     <a href="http://getexceptional.codeplex.com/" target="_blank"><img src="/images/exceptional_mail.png"></a>
@@ -88,11 +88,11 @@
 
 
         <li>
-          <div class="timeline-badge"><i class="glyphicon glyphicon-comment"></i></div>
+          <div class="timeline-badge"><i class="far fa-comment-alt"></i></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
               <h4 class="timeline-title">JokeWars</h4>
-              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> November 2008</small></p>
+              <p><small class="text-muted"><i class="far fa-clock"></i> November 2008</small></p>
             </div>
             <div class="timeline-body">
                 <a href="http://jokewars.com/"><img src="../images/screen_jokewars.png" width="225" alt="Joke Wars" border="1" /></a>
@@ -112,11 +112,11 @@
         </li>
 
         <li class="timeline-inverted">
-          <div class="timeline-badge danger"><i class="glyphicon glyphicon-globe"></i></div>
+          <div class="timeline-badge danger"><i class="fas fa-map-marked-alt"></i></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
               <h4 class="timeline-title">Google Maps Mashup for Patriots.com</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> March 2008</small></p>
+                <p><small class="text-muted"><i class="far fa-clock"></i> March 2008</small></p>
             </div>
             <div class="timeline-body">
                 <a href="http://fanclubs.patriots.com/"><img src="../images/screen_patriots.jpg" border="1"></a>
@@ -133,11 +133,11 @@
 
 
         <li>
-            <div class="timeline-badge info"><i class="glyphicon glyphicon-check"></i></div>
+            <div class="timeline-badge info"><i class="far fa-check-square"></i></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <h4 class="timeline-title">Internet Connection Diagnostics</h4>
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2005</small></p>
+                    <p><small class="text-muted"><i class="far fa-clock"></i> 2005</small></p>
                 </div>
                 <div class="timeline-body">
                     <img src="../images/screen_diagnostics.gif" border="1">
@@ -146,8 +146,8 @@
                         results are subject to their bandwidth. By having one of my own I can drop it on any computer
                         and test the connectivity between them. This project is no longer under development, but I was
                         looking to build more functionality into it, including traceroute utilities and
-                        other monitoring/troubleshooting tools... VoIP, QoS, etc. This utility is implemented using a J
-                        ava Applet with a Swing UI, and it tests uploads by making calls back to a Servlet. It can therefore
+                        other monitoring/troubleshooting tools... VoIP, QoS, etc. This utility is implemented using a Java Applet with a Swing UI, 
+                        and it tests uploads by making calls back to a Servlet. It can therefore
                         be conveniently packaged up in a WAR file and dropped into Tomcat as a webapp.
                     </p>
                     <dl class="dl-horizontal">
@@ -159,11 +159,11 @@
         </li>
 
         <li class="timeline-inverted">
-            <div class="timeline-badge warning"><i class="glyphicon glyphicon-oil"></i></div>
+            <div class="timeline-badge warning"><i class="fas fa-oil-can"></i></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <h4 class="timeline-title">Delivery Scheduling</h4>
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2004-2005</small></p>
+                    <p><small class="text-muted"><i class="far fa-clock"></i> 2004-2005</small></p>
                 </div>
                 <div class="timeline-body">
                     <img src="../images/screen_usoil.gif" border="1">
@@ -179,11 +179,11 @@
         </li>
 
         <li>
-            <div class="timeline-badge success"><i class="glyphicon glyphicon-usd"></i></div>
+            <div class="timeline-badge success"><i class="fas fa-search-dollar"></i></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <h4 class="timeline-title">Book Price Comparison</h4>
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> May 2001 / February 2003</small></p>
+                    <p><small class="text-muted"><i class="far fa-clock"></i> May 2001 / February 2003</small></p>
                 </div>
                 <div class="timeline-body">
                     <img src="../images/screen_diagnostics.gif" border="1">
@@ -212,11 +212,11 @@
 
 
         <li class="timeline-inverted">
-            <div class="timeline-badge info"><i class="glyphicon glyphicon-calendar"></i></div>
+            <div class="timeline-badge info"><i class="far fa-calendar-alt"></i></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <h4 class="timeline-title">Court Reservation System</h4>
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> May 2001</small></p>
+                    <p><small class="text-muted"><i class="far fa-clock"></i> May 2001</small></p>
                 </div>
                 <div class="timeline-body">
                     <a href="http://reservesport.sourceforge.net/"><img src="../images/screen_hcicourt.jpg"  alt="Court Reservation System" border="1" /></a>
@@ -238,11 +238,11 @@
 
 
         <li>
-            <div class="timeline-badge danger"><i class="glyphicon glyphicon-education"></i></div>
+            <div class="timeline-badge danger"><i class="fas fa-graduation-cap"></i></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <h4 class="timeline-title">GSIA MBA/MSIA Home Page</h4>
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> March 2001</small></p>
+                    <p><small class="text-muted"><i class="far fa-clock"></i> March 2001</small></p>
                 </div>
                 <div class="timeline-body">
                     <img src="../images/screen_mba.jpg" border="1" />
@@ -256,11 +256,11 @@
 
 
         <li class="timeline-inverted">
-            <div class="timeline-badge primary"><i class="glyphicon glyphicon-heart"></i></div>
+            <div class="timeline-badge primary"><i class="fas fa-heart"></i></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <h4 class="timeline-title">Love and Respect</h4>
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> December 2000</small></p>
+                    <p><small class="text-muted"><i class="far fa-clock"></i> December 2000</small></p>
                 </div>
                 <div class="timeline-body">
                     <a href="http://loveandrespect.com" target="_blank"><img src="../images/screen_loveres.jpg" border="1" /></a>
@@ -283,11 +283,11 @@
 
 
         <li>
-            <div class="timeline-badge success"><i class="glyphicon glyphicon-usd"></i></div>
+            <div class="timeline-badge success"><i class="fas fa-search-dollar"></i></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <h4 class="timeline-title">Fatdeal</h4>
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> November 2000</small></p>
+                    <p><small class="text-muted"><i class="far fa-clock"></i> November 2000</small></p>
                 </div>
                 <div class="timeline-body">
                     <a href="http://fatdeal.com"><img src="../images/screen_fatdeal.jpg" width="225" height="123" target="_blank" border="1" /></a>
@@ -307,11 +307,11 @@
 
 
         <li class="timeline-inverted">
-            <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+            <div class="timeline-badge danger"><i class="fas fa-comments-dollar"></i></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <h4 class="timeline-title">Auction Blitz</h4>
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> November 2000</small></p>
+                    <p><small class="text-muted"><i class="far fa-clock"></i> November 2000</small></p>
                 </div>
                 <div class="timeline-body">
                     <img src="../images/screen_auction.jpg" width="225" height="125" alt="" border="1" />
@@ -332,11 +332,11 @@
 
 
         <li>
-            <div class="timeline-badge primary"><i class="glyphicon glyphicon-picture"></i></div>
+            <div class="timeline-badge primary"><i class="far fa-images"></i></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <h4 class="timeline-title">Album Greetings</h4>
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> May 2000</small></p>
+                    <p><small class="text-muted"><i class="far fa-clock"></i> May 2000</small></p>
                 </div>
                 <div class="timeline-body">
                     <img src="../images/screen_album.jpg" width="225" height="125" alt="" border="1" />
@@ -360,11 +360,11 @@
 
 
         <li class="timeline-inverted">
-            <div class="timeline-badge"><i class="glyphicon glyphicon-briefcase"></i></div>
+            <div class="timeline-badge"><i class="fas fa-briefcase"></i></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <h4 class="timeline-title">IMC America</h4>
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> February 2000</small></p>
+                    <p><small class="text-muted"><i class="far fa-clock"></i> February 2000</small></p>
                 </div>
                 <div class="timeline-body">
                     <a href="http://www.imcamerica.com/" target="_blank"><img src="../images/screen_imc.jpg" width="225" height="125" alt="" border="1" /></a>
@@ -381,11 +381,11 @@
 
 
         <li>
-            <div class="timeline-badge success"><i class="glyphicon glyphicon-search"></i></div>
+            <div class="timeline-badge success"><i class="fas fa-search-location"></i></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <h4 class="timeline-title">Where Is Bob?</h4>
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> January 2000</small></p>
+                    <p><small class="text-muted"><i class="far fa-clock"></i> January 2000</small></p>
                 </div>
                 <div class="timeline-body">
                     <img src="../images/screen_bob.jpg" width="225" height="125" alt="" border="1" />
@@ -406,11 +406,11 @@
 
 
         <li class="timeline-inverted">
-            <div class="timeline-badge warning"><i class="glyphicon glyphicon-briefcase"></i></div>
+            <div class="timeline-badge warning"><i class="fas fa-briefcase"></i></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <h4 class="timeline-title">GSIA Job Offer Reporting</h4>
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> January 2000</small></p>
+                    <p><small class="text-muted"><i class="far fa-clock"></i> January 2000</small></p>
                 </div>
                 <div class="timeline-body">
                     <a href="p-gsia.php"><img src="../images/screen_gsia.jpg" width="225" height="125" alt="" border="1" /></a>

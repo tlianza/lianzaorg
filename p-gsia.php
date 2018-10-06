@@ -11,7 +11,7 @@ require('_header.php');
 <table width="80%" border="0" cellspacing="0" cellpadding="0" align="center">
 <tr>
 	<td colspan="2">
-	<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#C0C0C0">
+	<table width="100%" border="0" cellspacing="0" cellpadding="5">
 	<tr>
 		<td colspan="2" class="maintext">
 		<h3>Introduction</h3>
