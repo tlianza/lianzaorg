@@ -1,6 +1,6 @@
 ---
 title: "Album Greetings"
-date: 2010-05-01
+date: 2000-05-01
 technologies: ["ASP", "Microsoft Access"]
 featured_image: "/images/screen_album.jpg"
 ---
