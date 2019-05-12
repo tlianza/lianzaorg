@@ -51,6 +51,17 @@
         </div>
     {{end}}
 
+    <div class="post-technologies">
+        {{ with .Params.technologies }}
+        <section>
+            Technologies:
+            {{ range . }}
+                {{.}}
+            {{ end }}
+        </section>
+        {{ end }}
+    </div>
+
     <div class="post-comment">
         {{ if ( .Params.showComments | default true ) }}
         {{ if ne .Site.DisqusShortname "" }}
