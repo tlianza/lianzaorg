@@ -1,9 +1,14 @@
 ---
 title: "Fatdeal"
 date: 2000-11-01
+
+timeline_badge_color: "success"
+fontawesome_icon: "fa-search-dollar"
 technologies: ["ASP", "Microsoft SQL Server"]
-featured_image: "/images/screen_fatdeal.jpg"
 project_url: "http://fatdeal.com/"
+resources:
+- name: featured
+  src: "images/screen_fatdeal.jpg"
 ---
 
 This site was started as an independent study, but is no longer active at fatdeal.com. It allows online shoppers to

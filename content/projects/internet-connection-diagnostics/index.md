@@ -4,7 +4,9 @@ date: 2005-01-01
 timeline_badge_color: "info"
 fontawesome_icon: "fa-check-square"
 technologies: ["Java", "Swing", "Applet"]
-featured_image: "/images/screen_diagnostics.gif"
+resources:
+- name: featured
+  src: "images/screen_diagnostics.gif"
 ---
 
 There are a lot of great bandwidth testers out there (DSLReports, Speakeasy, etc.) but no free/open source solutions

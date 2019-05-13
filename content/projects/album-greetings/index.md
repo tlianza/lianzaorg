@@ -1,8 +1,12 @@
 ---
 title: "Album Greetings"
 date: 2000-05-01
+timeline_badge_color: "primary"
+fontawesome_icon: "fa-images"
 technologies: ["ASP", "Microsoft Access"]
-featured_image: "/images/screen_album.jpg"
+resources:
+- name: featured
+  src: "images/screen_album.jpg"
 ---
 
 This was a project for the junior level information systems project course. 

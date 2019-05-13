@@ -1,9 +1,13 @@
 ---
 title: "Love And Respect"
 date: 2000-12-01
+timeline_badge_color: "primary"
+fontawesome_icon: "fa-heart"
 technologies: ["ASP", "XML", "Microsoft SQL Server"]
-featured_image: "/images/screen_loveres.jpg"
 project_url: "http://loveandrespect.com/"
+resources:
+- name: featured
+  src: "images/screen_loveres.jpg"
 ---
 
 This site was for our senior Information Systems project course. It is currently online at

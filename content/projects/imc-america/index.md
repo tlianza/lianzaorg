@@ -1,8 +1,11 @@
 ---
 title: "IMC America"
 date: 2000-02-01
+fontawesome_icon: "fa-briefcase"
 technologies: ["javascript", "HTML", "CSS"]
-featured_image: "/images/screen_imc.jpg"
+resources:
+- name: featured
+  src: "images/screen_imc.jpg"
 ---
 
 This is the first site Bill and I did for an actual company, which was launched 

@@ -1,8 +1,12 @@
 ---
 title: "Auction Blitz"
 date: 2000-11-01
+timeline_badge_color: "danger"
+fontawesome_icon: "fa-comments-dollar"
 technologies: ["ASP"]
-featured_image: "/images/screen_auction.jpg"
+resources:
+- name: featured
+  src: "images/screen_auction.jpg"
 ---
 
 For the Intro to Electronic Commerce class we created this site based on some 
