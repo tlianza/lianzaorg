@@ -9,15 +9,10 @@
     </header>
     <div class="post-content">
         <!--featured_image-->
-
-        {{ $images := findRE "<img src=\"[^\"|\\\"]*\"" .Content -}}
-                                   {{ if ge (len $images) 1}}
-                                   {{ $.Scratch.Set "postHasImages" true }}
-        {{ end }}
-
-        {{ with .Params.featured_image }}
-        {{- $img := . -}}
-        <img src="{{ printf "%s%s" $cdn_url $img }}" class="featured_image">
+        {{ with .Page.Resources.Match "featured" }}
+            {{ range . }}
+                <img src="{{ .RelPermalink }}">
+            {{ end }}
         {{ end }}
         <!-- end featured_image-->
 
@@ -32,6 +27,11 @@
         {{ $finalContent }}
     </div>
 
+    {{ with .Params.project_url }}
+    <div>
+        See it here: <a href="{{.}}" target="_blank">{{.}}</a>
+    </div>
+    {{end}}
 
     {{ if .Params.tags }}
         <div class="post-tags">
