@@ -24,5 +24,5 @@ pipelines:
             variables:
               USER: 'lianzadeploy'
               SERVER: 'ssh.lianza.org'
-              REMOTE_PATH: '~/lianzadeploytest'
+              REMOTE_PATH: '~/public'
               LOCAL_PATH: 'public/*'
