@@ -10,4 +10,5 @@ pipelines:
     - step:
         script:
           - apt-get update && apt-get install -y hugo
+          - git submodule update --init # make sure theme is pulled in
           - hugo
