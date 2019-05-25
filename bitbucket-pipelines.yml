@@ -14,3 +14,13 @@ pipelines:
           - hugo version
           - git submodule update --init # make sure theme is pulled in
           - hugo
+    - step:
+        name: Deploy
+        deployment: production
+        script:
+          - pipe: atlassian/scp-deploy:0.3.1
+            variables:
+              USER: 'lianzadeploy'
+              SERVER: 'ssh.lianza.org'
+              REMOTE_PATH: 'lianzadeploytest'
+              LOCAL_PATH: 'public/*'
