@@ -1,18 +1,52 @@
 {{ define "content" }}
+<link rel="stylesheet" href="/css/timeline.css">
+<link rel="stylesheet" href="/css/timeline-custom.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 {{ $data := .Data }}
 <div class="post-warp archive">
-    <h2 class="post-title" style="text-align:right;padding-bottom:2em">-&nbsp;{{ $data.Plural | humanize }}{{ .Title }}&nbsp;-</h2>
-    {{ range (.Paginate (.Pages.GroupByDate "2006")).PageGroups }}
-    <h3>{{ .Key }}</h3>
+    <h2 class="post-title" style="text-align:right;">-&nbsp;{{ $data.Plural | humanize }}{{ .Title }}&nbsp;-</h2>
+    {{ .Content }}
 
-    {{ range .Pages }}
-    <article class="archive-item">
-        <a href="{{ .RelPermalink }}" class="archive-item-link">{{ .Title }}</a>
-        <span class="archive-item-date">
-            {{ .Date.Format "January 2006" }}
-        </span>
-    </article>
-    {{ end }} {{ end }}
-    {{ partial "paginator.html" . }}
+    <ul class="timeline">
+    {{ range $i,$p := .Pages }}
+        <li {{if not (modBool $i 2)}}class="timeline-inverted"{{end}}>
+            <div class="timeline-badge {{index .Params "timeline_badge_color"}}"><i class="fas {{index .Params "fontawesome_icon"}}"></i></div>
+            <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h3 class="timeline-title"><a href="{{.RelPermalink}}">{{ .Title }}</a></h3>
+                    <p><small class="text-muted"><i class="far fa-clock"></i> {{ .Date.Format "January 2006" }}</small></p>
+                </div>
+                <div class="timeline-body">
+                    {{ with .Resources.Match "featured" }}
+                        {{ range . }}
+                            {{ $image := .Resize "x150" }}
+                            <a href="{{ $p.RelPermalink }}">
+                                <img src="{{ $image.RelPermalink }}" border="1">
+                            </a>
+                        {{ end }}
+                    {{ end }}
+                    <!-- Show the short description if present, otherwise just show the whole thing -->
+                    {{ if (isset .Params "description") }}
+                        <p>{{index .Params "description"}}</p>
+                    {{ else }}
+                        {{ with .Content }}
+                            <p>{{.}}</p>
+                        {{end}}
+                    {{end}}
+                    {{ with .Params.technologies }}
+                        <dl class="dl-horizontal">
+                            <dt>Technologies</dt>
+                            <dd>
+                                {{ range . }}
+                                {{.}}
+                                {{ end }}
+                            </dd>
+                        </dl>
+                    {{ end }}
+                </div>
+            </div>
+        </li>
+    {{ end }}
+    </ul>
 </div>
 {{end }}
