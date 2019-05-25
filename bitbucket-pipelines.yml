@@ -10,4 +10,4 @@ pipelines:
     - step:
         script:
           - apt-get update && apt-get install -y hugo
-          - echo "Everything is awesome!"
+          - hugo
