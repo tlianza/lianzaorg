@@ -9,6 +9,6 @@ pipelines:
   default:
     - step:
         script:
-          - sudo snap install hugo # Hugo is outdated in apt
+          - snap install hugo # Hugo is outdated in apt
           - git submodule update --init # make sure theme is pulled in
           - hugo
