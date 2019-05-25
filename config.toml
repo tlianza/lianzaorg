@@ -1,0 +1,34 @@
+baseURL = "https://lianza.org/"
+languageCode = "en-us"
+title = "Personal Website of Tom Lianza"
+theme = "KeepIt"
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 1
+
+[params]
+    since = 2012
+    avatar = "/images/tomavatar.jpg" # Author's avatar
+
+[params.social]
+    GitHub = "tlianza"
+    Linkedin = "tlianza"
+    Twitter = "tlianza"
+    Instagram = "tlianza"
+    Facebook = "tlianza"
+    Keybase = "tlianza"
+    Bitbucket = "tlianza"
+    Stackoverflow = "26624/tom-lianza"
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5

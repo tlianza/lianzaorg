@@ -1,0 +1,9 @@
+.content-heading {
+    text-align: center;
+}
+
+.content-heading img {
+    height: 1em;
+    padding-left: 5pt;
+    padding-right: 2pt;
+}
