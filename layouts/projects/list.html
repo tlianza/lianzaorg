@@ -2,6 +2,21 @@
 <link rel="stylesheet" href="/css/timeline.css">
 <link rel="stylesheet" href="/css/timeline-custom.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<style type="text/css">
+    /* Make sure timeline styles are don't get clobbered by template */
+    li.timeline {
+        list-style: none;
+        padding: 20px 0 20px;
+        position: relative;
+    }
+    *, ::after, ::before {
+        box-sizing: border-box;
+    }
+    /* Widen the page a bit so the timeline doesn't get smooshed */
+    .post-warp {
+        max-width: 1000px;
+    }
+</style>
 {{ $data := .Data }}
 <div class="post-warp archive">
     <h2 class="post-title" style="text-align:right;">-&nbsp;{{ $data.Plural | humanize }}{{ .Title }}&nbsp;-</h2>
