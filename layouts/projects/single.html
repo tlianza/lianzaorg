@@ -1,0 +1,74 @@
+{{ define "content" -}}
+{{ $cdn_url := .Scratch.Get "cdn_url" }}
+<article class="post-warp">
+    <header class="post-header">
+        <h1 class="post-title">{{ .Title }}</h1>
+        <div class="post-meta">
+            <span class="post-time"><time datetime={{.Date.Format (.Site.Params.dateFormatToUse | default "2006-01") }} >{{ .Date.Format (.Site.Params.dateFormatToUse | default "January 2006") }}</time></span>
+        </div>
+    </header>
+    <div class="post-content">
+        <!--featured_image-->
+        {{ with .Page.Resources.Match "featured" }}
+            {{ range . }}
+                <img src="{{ .RelPermalink }}">
+            {{ end }}
+        {{ end }}
+        <!-- end featured_image-->
+
+        {{ $reAltIn := "<img src=\"([^\"]+)\" alt=\"([^\"]+)?\" />" }}
+        {{ $reAltOut :=  ( printf "<figure><img src=\"/images/ring.svg\" data-sizes=\"auto\" data-src=\"%s$1\" alt=\"$2\" class=\"lazyload\"><figcaption class=\"image-caption\">$2</figcaption></figure>" $cdn_url ) }}
+        {{ $altContent := .Content | replaceRE $reAltIn $reAltOut | safeHTML }}
+
+        {{ $reAltTitleIn := "<img src=\"([^\"]+)\" alt=\"([^\"]+)?\" title=\"([^\"]+)?\" />" }}
+        {{ $reAltTitleOut := ( printf "<figure><img src=\"/images/ring.svg\" data-src=\"%s$1\" data-sizes=\"auto\" alt=\"$2\" title=\"$3\" class=\"lazyload\"><figcaption class=\"image-caption\">$2</figcaption></figure>" $cdn_url ) }}
+        {{ $finalContent := $altContent | replaceRE $reAltTitleIn $reAltTitleOut | safeHTML }}
+
+        {{ $finalContent }}
+    </div>
+
+    {{ with .Params.project_url }}
+    <div>
+        See it here: <a href="{{.}}" target="_blank">{{.}}</a>
+    </div>
+    {{end}}
+
+    {{ if .Params.tags }}
+        <div class="post-tags">
+            {{ with .Params.tags }}
+            <section>
+                <i class="iconfont icon-icon-tag"></i>{{ i18n "Tag" }}:
+                {{ range . }}
+                <span class="tag"><a href="{{ "tags/" | absURL }}{{ . | urlize }}/">
+                        #{{.}}</a></span>
+                {{ end }}
+            </section>
+            {{ end }}
+            <section>
+                <a href="javascript:window.history.back();">{{ i18n "back" }}</a></span> ·
+                <span><a href="{{ .Site.BaseURL }}">{{ i18n "Home" }}</a></span>
+            </section>
+        </div>
+    {{end}}
+
+    <div class="post-technologies">
+        {{ with .Params.technologies }}
+        <section>
+            Technologies:
+            {{ range . }}
+                {{.}}
+            {{ end }}
+        </section>
+        {{ end }}
+    </div>
+
+    <div class="post-comment">
+        {{ if ( .Params.showComments | default true ) }}
+        {{ if ne .Site.DisqusShortname "" }}
+        {{ template "_internal/disqus.html" . }}
+        {{ end }}
+        {{ end }}
+    </div>
+</article>
+<a href="..">&lt;&lt;-- Back to Projects</a>
+{{- end }}

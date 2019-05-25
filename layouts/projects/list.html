@@ -1,0 +1,67 @@
+{{ define "content" }}
+<link rel="stylesheet" href="/css/timeline.css">
+<link rel="stylesheet" href="/css/timeline-custom.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<style type="text/css">
+    /* Make sure timeline styles are don't get clobbered by template */
+    li.timeline {
+        list-style: none;
+        padding: 20px 0 20px;
+        position: relative;
+    }
+    *, ::after, ::before {
+        box-sizing: border-box;
+    }
+    /* Widen the page a bit so the timeline doesn't get smooshed */
+    .post-warp {
+        max-width: 1000px;
+    }
+</style>
+{{ $data := .Data }}
+<div class="post-warp archive">
+    <h2 class="post-title" style="text-align:right;">-&nbsp;{{ $data.Plural | humanize }}{{ .Title }}&nbsp;-</h2>
+    {{ .Content }}
+
+    <ul class="timeline">
+    {{ range $i,$p := .Pages }}
+        <li {{if not (modBool $i 2)}}class="timeline-inverted"{{end}}>
+            <div class="timeline-badge {{index .Params "timeline_badge_color"}}"><i class="fas {{index .Params "fontawesome_icon"}}"></i></div>
+            <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h3 class="timeline-title"><a href="{{.RelPermalink}}">{{ .Title }}</a></h3>
+                    <p><small class="text-muted"><i class="far fa-clock"></i> {{ .Date.Format "January 2006" }}</small></p>
+                </div>
+                <div class="timeline-body">
+                    {{ with .Resources.Match "featured" }}
+                        {{ range . }}
+                            {{ $image := .Resize "x150" }}
+                            <a href="{{ $p.RelPermalink }}">
+                                <img src="{{ $image.RelPermalink }}" border="1">
+                            </a>
+                        {{ end }}
+                    {{ end }}
+                    <!-- Show the short description if present, otherwise just show the whole thing -->
+                    {{ if (isset .Params "description") }}
+                        <p>{{index .Params "description"}}</p>
+                    {{ else }}
+                        {{ with .Content }}
+                            <p>{{.}}</p>
+                        {{end}}
+                    {{end}}
+                    {{ with .Params.technologies }}
+                        <dl class="dl-horizontal">
+                            <dt>Technologies</dt>
+                            <dd>
+                                {{ range . }}
+                                {{.}}
+                                {{ end }}
+                            </dd>
+                        </dl>
+                    {{ end }}
+                </div>
+            </div>
+        </li>
+    {{ end }}
+    </ul>
+</div>
+{{end }}
