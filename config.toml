@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "Personal Website of Tom Lianza"
 theme = "KeepIt"
 
+googleAnalytics = "UA-149162-1"
+disqusShortname = "tlianza"
+
 [menu]
   [[menu.main]]
     name = "Blog"
@@ -27,6 +30,9 @@ theme = "KeepIt"
     Keybase = "tlianza"
     Bitbucket = "tlianza"
     Stackoverflow = "26624/tom-lianza"
+
+[params.gravatar]
+    email = "tom@lianza.org"
 
 [sitemap]
   changefreq = "monthly"
