@@ -4,7 +4,9 @@ title = "Personal Website of Tom Lianza"
 theme = "KeepIt"
 
 googleAnalytics = "UA-149162-1"
-disqusShortname = "tlianza"
+
+# Disabled since it doesn't seem to load properly
+#disqusShortname = "tlianza"
 
 [menu]
   [[menu.main]]
