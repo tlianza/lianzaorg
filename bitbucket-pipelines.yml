@@ -26,4 +26,4 @@ pipelines:
               SERVER: 'ssh.lianza.org'
               REMOTE_PATH: '~/public'
               LOCAL_PATH: 'public/*'
-              COMMAND: 'chgrp -R pg473580 public'
+              COMMAND: 'chgrp -R pg473580 ~/public && chmod -R 755 ~/public'
