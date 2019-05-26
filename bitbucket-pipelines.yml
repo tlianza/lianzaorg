@@ -13,7 +13,7 @@ pipelines:
           - dpkg -i hugo_0.55.6_Linux-64bit.deb
           - hugo version
           - git submodule update --init # make sure theme is pulled in
-          - hugo
+          - HUGO_ENV=production hugo --gc --minify
         artifacts:
           - public/**
     - step:
