@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Personal Website of Tom Lianza</title>
+    <link>https://lianza.org/projects/</link>
+    <description>Recent content in Projects on Personal Website of Tom Lianza</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Jul 2019 21:49:02 -0700</lastBuildDate>
+    
+	<atom:link href="https://lianza.org/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Not My Phone</title>
+      <link>https://lianza.org/projects/notmyphone/</link>
+      <pubDate>Mon, 15 Jul 2019 21:49:02 -0700</pubDate>
+      
+      <guid>https://lianza.org/projects/notmyphone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Larkspur Ferry Schedule</title>
+      <link>https://lianza.org/projects/ferry-schedule/</link>
+      <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://lianza.org/projects/ferry-schedule/</guid>
+      <description>I really wanted a mobile-friendly version of the larkspur ferry schedule, and I also wanted to learn React. This helped me accomplish both.</description>
+    </item>
+    
+    <item>
+      <title>Four Feelings</title>
+      <link>https://lianza.org/projects/four-feelings/</link>
+      <pubDate>Wed, 01 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://lianza.org/projects/four-feelings/</guid>
+      <description>Human emotions can be boiled down to four feelings. This is a simple, mobile-friendly counter to let you track your feelings throughout the day. When you think of it, open the page and click the green box representing the feeling you&#39;re feeling right at that moment. At the end of the day, look back at the totals and see how you felt. It&#39;s an interesting exercise that might surprise you.</description>
+    </item>
+    
+    <item>
+      <title>Pivotal Tracker Reports</title>
+      <link>https://lianza.org/projects/pivotal-tracker-reports/</link>
+      <pubDate>Wed, 01 Jun 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://lianza.org/projects/pivotal-tracker-reports/</guid>
+      <description>I&#39;ve really enjoyed Pivotal Tracker as a development tool, but generating reports for businesspeople to see high-level
+status was not possible. I built this tool using Sinatra and the Pivotal Tracker API to generate reports that could be
+emailed out on a weekly basis. They can group by label (to see where we&#39;re spending the most resources) and highlight in
+red or green if we&#39;re resolving ore stories than we&#39;re creating over a given time period.</description>
+    </item>
+    
+    <item>
+      <title>Get Exceptional</title>
+      <link>https://lianza.org/projects/getexceptional/</link>
+      <pubDate>Mon, 01 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://lianza.org/projects/getexceptional/</guid>
+      <description> Moving from Ruby to C# left me missing some of the great tools the Ruby ecosystem had relied on, including hosted error tracking. Exceptional was one of those tools, and it did not have a .NET compatible client, so I wrote one and open-sourced it on Codeplex. </description>
+    </item>
+    
+    <item>
+      <title>Jokewars</title>
+      <link>https://lianza.org/projects/jokewars/</link>
+      <pubDate>Sat, 01 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://lianza.org/projects/jokewars/</guid>
+      <description> Written with Ruby on Rails and MySQL, allows people to battle two jokes together. Uses full RESTful-routing and REST-based techniques. Also developed a Facebook app with the facebooker plugin. </description>
+    </item>
+    
+    <item>
+      <title>Patriots Maps</title>
+      <link>https://lianza.org/projects/patriots-maps/</link>
+      <pubDate>Sat, 01 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://lianza.org/projects/patriots-maps/</guid>
+      <description>This Google Maps mashup plots the Patriots Fan Clubs across the world, and allows you to zoom in, and search for them. It uses the Google Maps API to generate the map, and the Geocoding API to look up the latitude and longitude of new clubs when they are created.</description>
+    </item>
+    
+    <item>
+      <title>Internet Connection Diagnostics</title>
+      <link>https://lianza.org/projects/internet-connection-diagnostics/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      
+      <guid>https://lianza.org/projects/internet-connection-diagnostics/</guid>
+      <description>There are a lot of great bandwidth testers out there (DSLReports, Speakeasy, etc.) but no free/open source solutions I could find. The problem with a hosted bandwidth tester is that your results are subject to their bandwidth. By having one of my own I can drop it on any computer and test the connectivity between them. This project is no longer under development, but I was looking to build more functionality into it, including traceroute utilities and other monitoring/troubleshooting tools&amp;hellip; VoIP, QoS, etc.</description>
+    </item>
+    
+    <item>
+      <title>Delivery Scheduling</title>
+      <link>https://lianza.org/projects/delivery-scheduling/</link>
+      <pubDate>Wed, 01 Dec 2004 00:00:00 +0000</pubDate>
+      
+      <guid>https://lianza.org/projects/delivery-scheduling/</guid>
+      <description>Developed a system for scheduling deliveries of motor oil. It uses a DHTML-based front end for manually laying out the schedule in a drag-and-drop fashion. Delivery schedules are projected and arranged based on delivery and consumption history.</description>
+    </item>
+    
+    <item>
+      <title>Book Prices</title>
+      <link>https://lianza.org/projects/book-prices/</link>
+      <pubDate>Sat, 01 Feb 2003 00:00:00 +0000</pubDate>
+      
+      <guid>https://lianza.org/projects/book-prices/</guid>
+      <description>This project was originally done as part of the Distributed Object Technologies course, implemented in both CORBA and RMI. I later rewrote it, and it is currently implemented as a web service running under Apache Axis. The concept is simple - there are plenty of price comparison sites, but in order to use them, you have to go visit them. In other words, you either have to do your shopping from their site, or shop at another site and then go to their site to find the product (shop twice).</description>
+    </item>
+    
+    <item>
+      <title>Carnegie Mellon Coursework</title>
+      <link>https://lianza.org/projects/coursework/</link>
+      <pubDate>Wed, 01 Aug 2001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lianza.org/projects/coursework/</guid>
+      <description> Majors Information and Decision Systems
+Human Computer Interaction
+Master of Information Systems Management Courses Freshman Year - First Semester  80-101&amp;nbsp;&amp;nbsp;Mathematics in Context (Freshman Seminar) 21-121&amp;nbsp;&amp;nbsp;Calculus 1 80-100&amp;nbsp;&amp;nbsp;What Philosophy Is 76-101&amp;nbsp;&amp;nbsp;Interpretation and Argument 80-136&amp;nbsp;&amp;nbsp;Social Structure, Public Policy, &amp;amp; Ethical Dilemmas  Freshman Year - Second Semester  21-122&amp;nbsp;&amp;nbsp;Calculus 2 21-127&amp;nbsp;&amp;nbsp;Intro to Modern Mathematics 15-127&amp;nbsp;&amp;nbsp;Intro to Programming and Computer Science 79-104&amp;nbsp;&amp;nbsp;World History 36-201&amp;nbsp;&amp;nbsp;Statistical Reasoning  Sophomore Year - First Semester  15-211&amp;nbsp;&amp;nbsp;Fundamental Structures of Computer Science 36-202&amp;nbsp;&amp;nbsp;Intro to Statistical Methods 51-261&amp;nbsp;&amp;nbsp;Communication and Design Fundamentals 85-211&amp;nbsp;&amp;nbsp;Cognitive Psychology 88-313&amp;nbsp;&amp;nbsp;Rationality and Values in Democracy  Sophomore Year - Second Semester  15-212&amp;nbsp;&amp;nbsp;Fundamental Structures of Computer Science II 21-241&amp;nbsp;&amp;nbsp;Matrix Algebra 51-422&amp;nbsp;&amp;nbsp;Visual Interface Design 88-260&amp;nbsp;&amp;nbsp;Organizations 76-352&amp;nbsp;&amp;nbsp;American Poetry  Junior Year - First Semester  05-610&amp;nbsp;&amp;nbsp;Intro to HCI 88-220&amp;nbsp;&amp;nbsp;Policy Analysis I 88-240&amp;nbsp;&amp;nbsp;Empirical Research Methods I 88-271&amp;nbsp;&amp;nbsp;Fundamentals of System Development I 88-272&amp;nbsp;&amp;nbsp;Application Design and Development  Junior Year - Second Semester  88-273 &amp;nbsp;&amp;amp;&amp;nbsp;88-274&amp;nbsp;&amp;nbsp;Systems Development Project 88-xxx&amp;nbsp;&amp;nbsp;Independent Study in Information Systems 88-241&amp;nbsp;&amp;nbsp;Empirical Research Methods II 88-223&amp;nbsp;&amp;nbsp;Decision Analysis and Decision Support Systems 70-459&amp;nbsp;&amp;nbsp;Web Business Engineering  Senior Year - First Semester  05-631&amp;nbsp;&amp;nbsp;Software Architecture for User Interfaces 88-275&amp;nbsp;&amp;nbsp;Information Systems Applications 95-704&amp;nbsp;&amp;nbsp;Advanced Database Management 95-705&amp;nbsp;&amp;nbsp;Telecommunications Management 95-730&amp;nbsp;&amp;nbsp;Electronic Commerce 95-752&amp;nbsp;&amp;nbsp;Information Security Management  Senior Year - Second Semester  05-671&amp;nbsp;&amp;nbsp;Human Computer Interaction Project 95-711&amp;nbsp;&amp;nbsp;Financial Analysis 95-702&amp;nbsp;&amp;nbsp;Organizational Communication and Distributed Object Technologies 95-731&amp;nbsp;&amp;nbsp;Electronic Commerce: Organizational Strategy 90-782&amp;nbsp;&amp;nbsp;Multimedia 95-733&amp;nbsp;&amp;nbsp;Internet Technologies  Graduate School - Final Semester  80-495&amp;nbsp;&amp;nbsp;Independent Study in Human Computer Interaction 95-788&amp;nbsp;&amp;nbsp;Entrepreneurism 95-788&amp;nbsp;&amp;nbsp;Planning for an Information Technology Startup 95-718&amp;nbsp;&amp;nbsp;Professional Speaking 95-786&amp;nbsp;&amp;nbsp;Software Project Organization and Management 95-771&amp;nbsp;&amp;nbsp;Algorithms and Data Structures for Information Processing </description>
+    </item>
+    
+    <item>
+      <title>Court Reservation System</title>
+      <link>https://lianza.org/projects/reservesport/</link>
+      <pubDate>Tue, 01 May 2001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lianza.org/projects/reservesport/</guid>
+      <description>Developed as part of the HCI project course, we built this site for the CMU Athletic Department. It allows students to reserve Racquetball, Squash, Tennis, and Spinning times.</description>
+    </item>
+    
+    <item>
+      <title>GSIA MBA/MSIA Home Page</title>
+      <link>https://lianza.org/projects/gsia/</link>
+      <pubDate>Thu, 01 Mar 2001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lianza.org/projects/gsia/</guid>
+      <description>This is a revamped version of the old front page for the GSIA&amp;rsquo;s MBA program. The site is used regularly by current students as a portal to different sources of academic information. In addition to development, I was also responsible for the design.</description>
+    </item>
+    
+    <item>
+      <title>Love And Respect</title>
+      <link>https://lianza.org/projects/loveandrespect/</link>
+      <pubDate>Fri, 01 Dec 2000 00:00:00 +0000</pubDate>
+      
+      <guid>https://lianza.org/projects/loveandrespect/</guid>
+      <description>This site was for our senior Information Systems project course. It is currently online at loveandrespect.com. Our team worked with the client, Dr. Emerson Eggerichs, to create an online presence for his business. We helped him formulate the ideas, architected the system, and implemented it completely.</description>
+    </item>
+    
+    <item>
+      <title>Auction Blitz</title>
+      <link>https://lianza.org/projects/auction-blitz/</link>
+      <pubDate>Wed, 01 Nov 2000 00:00:00 +0000</pubDate>
+      
+      <guid>https://lianza.org/projects/auction-blitz/</guid>
+      <description>For the Intro to Electronic Commerce class we created this site based on some research on auction theory. It is similar in format to ebay, but instead of one auction type we implemented three. It could theoretically replace the current CMU system misc.market because the &amp;ldquo;sealed bid&amp;rdquo; option allows people to trade goods instead of simply buying or selling them.</description>
+    </item>
+    
+    <item>
+      <title>Fatdeal</title>
+      <link>https://lianza.org/projects/fatdeal/</link>
+      <pubDate>Wed, 01 Nov 2000 00:00:00 +0000</pubDate>
+      
+      <guid>https://lianza.org/projects/fatdeal/</guid>
+      <description>This site was started as an independent study, but is no longer active at fatdeal.com. It allows online shoppers to look for coupons at their favorite stores. Member features allow people to store coupons in a &amp;ldquo;coupon wallet&amp;rdquo;, keep an eye on their favorite sites, and set up coupon alerts based on their preferences. Chalk this up as another failed dot-com.</description>
+    </item>
+    
+    <item>
+      <title>Album Greetings</title>
+      <link>https://lianza.org/projects/album-greetings/</link>
+      <pubDate>Mon, 01 May 2000 00:00:00 +0000</pubDate>
+      
+      <guid>https://lianza.org/projects/album-greetings/</guid>
+      <description>This was a project for the junior level information systems project course. It was an online photo album that allowed people to upload photographs, configure and manage multiple photo albums, and share these albums with friends by creating passworded albums.</description>
+    </item>
+    
+    <item>
+      <title>IMC America</title>
+      <link>https://lianza.org/projects/imc-america/</link>
+      <pubDate>Tue, 01 Feb 2000 00:00:00 +0000</pubDate>
+      
+      <guid>https://lianza.org/projects/imc-america/</guid>
+      <description>This is the first site Bill and I did for an actual company, which was launched online at imcamerica.com. This was largely an exercise in information architecture defintion, followed by front-end coding and design.</description>
+    </item>
+    
+    <item>
+      <title>GSIA Job Offer Reporting</title>
+      <link>https://lianza.org/projects/gsia-job-offer-reporting/</link>
+      <pubDate>Sat, 01 Jan 2000 00:00:00 +0000</pubDate>
+      
+      <guid>https://lianza.org/projects/gsia-job-offer-reporting/</guid>
+      <description>Introduction This site is used by students at the GSIA and administrators at the Career Center. It is currently active, but contains sensitive information about job offers so it is not accessible to the general public. The career center uses this process to collect the data that is eventually aggregated and provided to magazines such as US News and World Reports. This should provide a brief overview of some of the features.</description>
+    </item>
+    
+    <item>
+      <title>Where Is Bob?</title>
+      <link>https://lianza.org/projects/whereisbob/</link>
+      <pubDate>Sat, 01 Jan 2000 00:00:00 +0000</pubDate>
+      
+      <guid>https://lianza.org/projects/whereisbob/</guid>
+      <description>This site was launched at whereisbob.com and began as a project for Web Business Engineering. It was an online game that allowed visitors to hunt around a map for this character named Bob. If they sign up for membership, they were able to earn points, keep statistics, and store the clues they picked up during the search.</description>
+    </item>
+    
+  </channel>
+</rss>

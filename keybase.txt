@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/tlianza
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://lianza.org
+  * I am tlianza (https://keybase.io/tlianza) on keybase.
+  * I have a public key with fingerprint 0583 AA99 3F53 6F97 730D  1CE0 CE4C 302D AC70 F3DA
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101dcb583b802cd9adec6d0c4468691ef780bb32e41f68e384c4662d8534510127a0a",
+            "fingerprint": "0583aa993f536f97730d1ce0ce4c302dac70f3da",
+            "host": "keybase.io",
+            "key_id": "ce4c302dac70f3da",
+            "kid": "0101dcb583b802cd9adec6d0c4468691ef780bb32e41f68e384c4662d8534510127a0a",
+            "uid": "778b1caf10583f3887fa3c327b933a19",
+            "username": "tlianza"
+        },
+        "service": {
+            "hostname": "lianza.org",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1456634975,
+    "expire_in": 157680000,
+    "prev": "b9d327e7ec90588ec4026dc9ac894cf6b64045cb5eefee686dc8ad99de7f54ec",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.51
+Comment: https://keybase.io/crypto
+
+yMIiAnicrVJbSBVBGN7TxUoo7EIZgeIWdDPb+86eoiv0ECFYaDdrmZ2ZPS5Hd497
+1lN2FIl6SCizECGkKApCuqdhlNiFTEqiC2UZqRRGapCVRGUZzZq99di8DPPP933/
+93/8dyaOZhIDQ00kafeVJwWB1ltVRUzOkxI9zhoOLmaDcTZMhi+Sj0nU08MWZoMs
+x3M8RoYMRANwAsIaxAQpmEOSpABF44mpAs4wRIFIvKkAIgIJSYoiYCCLkkzJggo5
+yKazpmWHiBtxLdvzZakghJommrKomJqqihzmEeEQkZDICRgilTNF7BPznKjPoOYM
+GCUZlkNr9KEP2/sH/j/7LhqWU1Vg8AiavG/cFAFQTSgiUVANTRQhr/nAKHFtWEAo
+2su3oL0LsqXpLC3GLET8XP1BRgB//jMcN0SJEdfxHOTk03qe50WiQZ/nFUd84A5i
+6CMSumHZmIZIGTHiRi3HZoM8RSLP8jV5SVYUUdJUOZ0lOyOWS3TLR8iqAjh6/D4k
+RiUNDVPfRCVIo8MAgiROUDDSIAKahEzFUCROkml0hJiE0LAwAhBrGiaqKUsEsf5Q
+hbbDBgG1CUNUMmqFbOgVuYQtvX0zdwwTSGQSxo7yl4tJnJD0d+WWuuN+zVffrHw6
+tDHlzKVPp6o2bU57lvX5ZW+8YsZysfVA5vGW2vvrwkkZ+kD/6JJpgwM1ZdOvL624
+Nxt05IYb72uTU0oOTWvbeuRuTxZzc9/dheGVt5rn7VnyPd5Z/xyvyPuwuL2u7GQt
+csc/bWho62a+tTSfmNlzcVZ3VyV/ub/u0Lm6A+jn+n5ldXhD07uTaV3jRh2cMphd
+MzXyKmXu+Ka88qv87JTtC+rs6nL9xLPB3kn1Hfvhg2vthf1bXtjoy963qemv62OB
+Fw/RskUfvzb3FSfcyJzzY01OV8uvRanK2eTH7+OVj44lZ68KXRDWsttqmaNgADae
+zj3c+Tm7sS2r+nxrX+bVmt8BDUvI
+=c/xe
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tlianza
+
+==================================================================
