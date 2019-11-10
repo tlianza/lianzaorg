@@ -4,7 +4,7 @@ date: 2019-02-12
 timeline_badge_color: "primary"
 fontawesome_icon: "fa-ship"
 technologies: ["React"]
-project_url: "http://larkspurferry.cf/"
+project_url: "https://larkspur.ferryschedule.mobi/"
 ---
 
 I really wanted a mobile-friendly version of the larkspur ferry schedule, and
