@@ -1,84 +1,101 @@
-<h1>Hotel Points Calculator</h1>
-<form class="form-inline">
-    <div class="form-group">
-        <label for="baseRate">Cash Rate for Hotel:</label>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
+    
+    <title>Hotel Points Calculator</title>
+  </head>
+  <body>
+
+    <h1>Hotel Points Calculator</h1>
+    <form class="form-inline">
+        <div class="form-group">
+            <label for="baseRate">Cash Rate for Hotel:</label>
+            <div class="input-group">
+                <div class="input-group-addon">$</div>
+                <input type="text" class="form-control" id="baseRate" placeholder="100.00">
+            </div>
+        </div>
+    </form>
+    <h3>-OR-</h3>
+
+    <form class="form-inline">
+        <div class="input-group">
+            <input type="number" class="form-control" id="points0" placeholder="100">
+            <div class="input-group-addon">points</div>
+        </div>
+        +
         <div class="input-group">
             <div class="input-group-addon">$</div>
-            <input type="text" class="form-control" id="baseRate" placeholder="100.00">
+            <input type="number" class="form-control" id="dollars0" placeholder="100.00">
         </div>
-    </div>
-</form>
-<h3>-OR-</h3>
+        =
+        <div class="input-group">
+            <p class="form-control-static" id="output0"></p>
+        </div>
+    </form>
 
-<form class="form-inline">
-    <div class="input-group">
-        <input type="number" class="form-control" id="points0" placeholder="100">
-        <div class="input-group-addon">points</div>
-    </div>
-    +
-    <div class="input-group">
-        <div class="input-group-addon">$</div>
-        <input type="number" class="form-control" id="dollars0" placeholder="100.00">
-    </div>
-    =
-    <div class="input-group">
-        <p class="form-control-static" id="output0"></p>
-    </div>
-</form>
+    <form class="form-inline">
+        <div class="input-group">
+            <input type="number" class="form-control" id="points1" placeholder="100">
+            <div class="input-group-addon">points</div>
+        </div>
+        +
+        <div class="input-group">
+            <div class="input-group-addon">$</div>
+            <input type="number" class="form-control" id="dollars1" placeholder="100.00">
+        </div>
+        =
+        <div class="input-group">
+            <p class="form-control-static" id="output1"></p>
+        </div>
+    </form>
 
-<form class="form-inline">
-    <div class="input-group">
-        <input type="number" class="form-control" id="points1" placeholder="100">
-        <div class="input-group-addon">points</div>
-    </div>
-    +
-    <div class="input-group">
-        <div class="input-group-addon">$</div>
-        <input type="number" class="form-control" id="dollars1" placeholder="100.00">
-    </div>
-    =
-    <div class="input-group">
-        <p class="form-control-static" id="output1"></p>
-    </div>
-</form>
+    <form class="form-inline">
+        <div class="input-group">
+            <input type="number" class="form-control" id="points2" placeholder="100">
+            <div class="input-group-addon">points</div>
+        </div>
+        +
+        <div class="input-group">
+            <div class="input-group-addon">$</div>
+            <input type="number" class="form-control" id="dollars2" placeholder="100.00">
+        </div>
+        =
+        <div class="input-group">
+            <p class="form-control-static" id="output2"></p>
+        </div>
+    </form>
 
-<form class="form-inline">
-    <div class="input-group">
-        <input type="number" class="form-control" id="points2" placeholder="100">
-        <div class="input-group-addon">points</div>
-    </div>
-    +
-    <div class="input-group">
-        <div class="input-group-addon">$</div>
-        <input type="number" class="form-control" id="dollars2" placeholder="100.00">
-    </div>
-    =
-    <div class="input-group">
-        <p class="form-control-static" id="output2"></p>
-    </div>
-</form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js" integrity="sha512-wV7Yj1alIZDqZFCUQJy85VN+qvEIly93fIQAN7iqDFCPEucLCeNFz4r35FCo9s6WrpdDQPi80xbljXB8Bjtvcg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(function() {
 
-<script type="text/javascript">
-    $(function() {
+            $(".form-control").change(function(){
+                var baseRate = $('#baseRate').val();
+                console.log(baseRate);
+                for(i=0; i<3; i++) {
+                    var dollars = $('#dollars'+i).val();
+                    var points = $('#points'+i).val();
 
-        $(".form-control").change(function(){
-            var baseRate = $('#baseRate').val();
-            console.log(baseRate);
-            for(i=0; i<3; i++) {
-                var dollars = $('#dollars'+i).val();
-                var points = $('#points'+i).val();
+                    var value = (baseRate - dollars) / points;
+                    console.log('Value: '+value);
 
-                var value = (baseRate - dollars) / points;
-                console.log('Value: '+value);
-
-                if(value > 0 && isFinite(value)) {
-                    $('#output' + i).html('Points are valued at: $'+value);
+                    if(value > 0 && isFinite(value)) {
+                        $('#output' + i).html('Points are valued at: $'+value);
+                    }
+                    else {
+                        $('#output' + i).html('');
+                    }
                 }
-                else {
-                    $('#output' + i).html('');
-                }
-            }
+            });
         });
-    });
-
-</script>
+    </script>
+</body>
+</html>
