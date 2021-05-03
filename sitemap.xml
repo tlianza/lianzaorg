@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -17,7 +16,49 @@
     </url>
   
     <url>
+      <loc>https://lianza.org/</loc>
+      
+      <lastmod>2019-07-15T21:49:02-07:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://lianza.org/projects/</loc>
+      
+      <lastmod>2019-07-15T21:49:02-07:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
       <loc>https://lianza.org/quotes/facts/</loc>
+      
+      <lastmod>2019-05-25T06:28:47-07:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://lianza.org/quotes/</loc>
       
       <lastmod>2019-05-25T06:28:47-07:00</lastmod>
       
@@ -331,49 +372,7 @@
       <changefreq>monthly</changefreq>
       
       
-      <priority>0</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://lianza.org/</loc>
-      
-      <lastmod>2019-07-15T21:49:02-07:00</lastmod>
-      
-      
-      <changefreq>monthly</changefreq>
-      
-      
-      <priority>0</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://lianza.org/projects/</loc>
-      
-      <lastmod>2019-07-15T21:49:02-07:00</lastmod>
-      
-      
-      <changefreq>monthly</changefreq>
-      
-      
       <priority>0.5</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://lianza.org/quotes/</loc>
-      
-      <lastmod>2019-05-25T06:28:47-07:00</lastmod>
-      
-      
-      <changefreq>monthly</changefreq>
-      
-      
-      <priority>0</priority>
       
       
     </url>
@@ -385,7 +384,7 @@
       <changefreq>monthly</changefreq>
       
       
-      <priority>0</priority>
+      <priority>0.5</priority>
       
       
     </url>

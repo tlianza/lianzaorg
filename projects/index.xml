@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Personal Website of Tom Lianza</title>
@@ -6,11 +6,7 @@
     <description>Recent content in Projects on Personal Website of Tom Lianza</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Jul 2019 21:49:02 -0700</lastBuildDate>
-    
-	<atom:link href="https://lianza.org/projects/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 15 Jul 2019 21:49:02 -0700</lastBuildDate><atom:link href="https://lianza.org/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Not My Phone</title>
       <link>https://lianza.org/projects/notmyphone/</link>
@@ -121,7 +117,7 @@ Master of Information Systems Management Courses Freshman Year - First Semester 
       <pubDate>Tue, 01 May 2001 00:00:00 +0000</pubDate>
       
       <guid>https://lianza.org/projects/reservesport/</guid>
-      <description>Developed as part of the HCI project course, we built this site for the CMU Athletic Department. It allows students to reserve Racquetball, Squash, Tennis, and Spinning times.</description>
+      <description>Developed as part of the HCIproject course, we built this site for the CMU Athletic Department. It allows students to reserve Racquetball, Squash, Tennis, and Spinning times.</description>
     </item>
     
     <item>
